@@ -1,0 +1,252 @@
+.wrapper {
+  max-width: 1440px;
+}
+.sectionup {
+}
+.header-nav {
+  background-color: #232536;
+  padding: 0 80px;
+}
+.header-body {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 25px 0;
+}
+.header-logo {
+}
+.header-list {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+
+  font-weight: 300;
+}
+.header-list_item {
+  font-size: 16px;
+}
+.header-list_item a {
+  transition: color 0.3s linear;
+}
+.header-list_item a:hover {
+  color: #ffd050;
+}
+.header-list_btn {
+  font-family: "Sen", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  background-color: #fff;
+  padding: 16px 48px;
+  transition: background-color 0.3s linear;
+}
+.header-list_btn:hover {
+  background-color: #ffd050;
+}
+.header-list_btn a {
+  color: #000;
+}
+.header-list_btn a:visited {
+  color: #000;
+}
+
+.hero-main {
+  position: relative;
+  height: 720px;
+  overflow: hidden;
+}
+.hero-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+.hero-bg::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to left, rgba(0,0,0,0) 20%, rgba(0,0,0,0.6) 100%);}
+
+.hero-body {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+  padding: 128px 80px 0 80px;
+}
+.hero-body_suptitle {
+  text-transform: uppercase;
+  line-height: 20px;
+  letter-spacing: 3px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+}
+.hero-body_suptitle span {
+  font-weight: 900;
+}
+.hero-body_title {
+  padding-top: 24px;
+  max-width: 840px;
+  font-size: 56px;
+  font-weight: 700;
+}
+.hero-body_date {
+  padding-top: 24px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+}
+.hero-body_date span {
+  color: #ffd050;
+}
+.hero-body_subtitle {
+  max-width: 600px;
+  padding-top: 16px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+}
+.hero-body_btn {
+  display: inline-block;
+  padding-top: 50px;
+}
+.hero-body_btn a {
+  padding: 16px 48px;
+  background-color: #ffd050;
+  color: #000;
+}
+
+.posts {
+  padding: 128px 80px;
+}
+.posts-body {
+  display: flex;
+  column-gap: 32px;
+}
+.posts-card {
+}
+.posts-card_title{
+  padding-bottom: 32px;
+  font-family: "Sen", sans-serif;
+  color: #000;
+  font-size: 36px;
+  font-weight: 700;
+  letter-spacing: -2px;
+}
+.posts-card_body{
+  border: 1px solid rgba(109, 110, 118, 0.1);
+  padding: 32px;
+}
+.post-card_img {
+  display: inline-block;
+  width: 100%;
+}
+.post-card_date {
+  color: #4C4C4C;
+  padding-top: 32px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+}
+.post-card_date span{
+  color: #592EA9;
+}
+.post-card_subtitle {
+  max-width: 670px;
+  font-family: "Sen", sans-serif;
+  color: #232536;
+  padding-top: 16px;
+  font-size: 28px;
+  font-weight: 700;
+  letter-spacing: -1px;
+  line-height: 40px;
+}
+.post-card_text {
+  padding-top: 16px;
+  max-width: 555px;
+  color: #6D6E76;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+}
+.posts-list {
+  display: flex;
+  flex-direction: column;
+  max-width: 517px;
+}
+.posts-list_up{
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 32px;
+}
+.posts-list_title {
+  color: #232536;
+  font-family: "Sen", sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 48px;
+  letter-spacing: -2px;
+}
+.posts-list_btn {
+  background: none;
+
+}
+.posts-list_btn a{
+  all: unset
+  background-color: #fff;
+  color: #592EA9;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+}
+.posts-list_body{
+  display: flex;
+  flex-direction: column;
+}
+.posts-list_item {
+  position: relative; 
+  width: 517px;
+  height: 181px;
+  padding-left: 32px;
+}
+.posts-list_item::before{
+  content: '';
+  position: absolute;
+  inset: 0;                    /* закрывает всю карточку */
+  background: #FBF6EA;         /* бежевый - замените на свой */
+  border-radius: 4px;          /* если нужен скруглённый угол */
+  opacity: 0;                  /* невидим по умолчанию */
+  transition: opacity .75s ease;
+  pointer-events: none; /* не блокирует hover */
+  z-index: -1;       
+}
+.posts-list_item:hover::before{
+  opacity: 1;
+}
+.list-item_date {
+  padding-bottom: 8px;
+  color: #4C4C4C;
+  padding-top: 32px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+}
+.list-item_date span{
+  color: #592EA9;
+}
+.list-item_text {
+  max-width: 420px;
+  color: #232536;
+  font-family: "Sen", sans-serif;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 32px;
+}
